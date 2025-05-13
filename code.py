@@ -69,7 +69,8 @@ def cerrar_bucle():
 
 # Función para guardar las anotaciones en un archivo de texto
 def guardar_anotaciones(imagen_path, loop_num):
-    nombre_archivo = os.path.splitext(os.path.basename(imagen_path))[0] + '.txt'
+    nombre_archivo = ruta_carpeta
+    nombre_archivo += os.path.splitext(os.path.basename(imagen_path))[0] + '.txt'
     
     with open(nombre_archivo, 'a') as f:
         #f.write(f'Loop {loop_num}:\n')
